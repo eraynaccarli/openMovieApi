@@ -54,10 +54,10 @@
 # Maven Run
 To build and run the application with Maven, please follow the directions below;
 
-  $ cd open-weather
+    $ cd open-weather
 
-  $ mvn clean install
+    $ mvn clean install
 
-  $ mvn spring-boot:run
+    $ mvn spring-boot:run
 
 You can reach the swagger-ui via http://{HOST}:8080/swagger-ui.html
