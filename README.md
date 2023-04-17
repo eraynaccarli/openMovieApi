@@ -36,8 +36,9 @@
   The application can be built and run by the Docker engine. The Dockerfile has multistage build, so you do not need to build and run separately.
   Please follow the below directions in order to build and run the application with Docker Compose;
 
-  $ cd movieAPI
-  $ docker-compose up -d
+    $ cd movieAPI
+
+    $ docker-compose up -d
   
   Docker compose creates 3 replicas (instances) of the application on port range 9595-9597
   You can reach the open-api-ui via http://{HOST}:{9595-9597}/swagger-ui.html
@@ -50,10 +51,10 @@ You can reach grafana page via http://{HOST}:3000 - GF_SECURITY_ADMIN_PASSWORD=a
 # Maven Run
 To build and run the application with Maven, please follow the directions below;
 
-$ cd open-weather
+  $ cd open-weather
 
-$ mvn clean install
+  $ mvn clean install
 
-$ mvn spring-boot:run
+  $ mvn spring-boot:run
 
 You can reach the swagger-ui via http://{HOST}:8080/swagger-ui.html
