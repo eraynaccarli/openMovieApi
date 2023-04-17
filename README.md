@@ -51,7 +51,9 @@ You can reach grafana page via http://{HOST}:3000 - GF_SECURITY_ADMIN_PASSWORD=a
 To build and run the application with Maven, please follow the directions below;
 
 $ cd open-weather
+
 $ mvn clean install
+
 $ mvn spring-boot:run
 
 You can reach the swagger-ui via http://{HOST}:8080/swagger-ui.html
