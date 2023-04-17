@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:moviedb
+  h2:
+    console:
+      enabled: true
+
+
+movie-db:
+  api-url: https://api.themoviedb.org/3/search/movie?api_key=
+  api-key: 66163767a1794185bacde651631ae753
+
+# actuator'un kendi configi
+management:
+  endpoints:
+    web:
+      exposure:
+        include: # actuator'un tum endpoitnlerini ve prometheusu actik , uygulamamizin metriclerini okuyabilir hale getirdik
+          - "*"
+          - prometheus
+
